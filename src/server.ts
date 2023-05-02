@@ -13,7 +13,7 @@ const port = process.env.PORT || 4005;
 const app = express();
 
 app.get("/", (_req, _res) => {
-  _res.status(200).send("Server Runnig Successfully");
+  _res.status(200).send(" ⚡️ Server Runnig Successfully ⚡️ ");
 });
 
 app.use(express.json());
