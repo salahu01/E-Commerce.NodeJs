@@ -30,8 +30,6 @@ const getOne = async (req: any, res: any) => {
   } catch (error) {
     res.status(404).json({ success: false, message: "Something went worng !", data: error });
   }
-
-
 };
 
 const addOne = async (req: any, res: any) => {
@@ -55,7 +53,7 @@ const addOne = async (req: any, res: any) => {
       }
       res.status(201).send({
         success: true,
-        message: `${req.body}\n product is successfully added`,
+        message: `Product is successfully added`,
         data: [],
       });
     } else {
@@ -68,7 +66,6 @@ const addOne = async (req: any, res: any) => {
   } catch (error) {
     res.status(404).json({ success: false, message: "Something went worng !", data: error });
   }
-
 };
 
 export = { getOne, addOne }
